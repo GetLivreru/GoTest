@@ -16,6 +16,7 @@ func TestParseArray(t *testing.T) {
 		delim string
 		dims  []int
 		elems [][]byte
+		
 	}{
 		{`{}`, `,`, nil, [][]byte{}},
 		{`{NULL}`, `,`, []int{1}, [][]byte{nil}},
